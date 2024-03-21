@@ -40,7 +40,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 25px;
     transition: -3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
@@ -50,12 +50,11 @@ body {
     color: #0ef;
 }
 
-.home {
+/* .home {
     position: relative;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background-image: url("wallpaper.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -63,10 +62,27 @@ body {
     padding: 70px 10% 0;
     opacity: 1;
 
+} */
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap:2.2rem; 
+}
+
+.home-img img{
+    margin-top: 5%;
+    max-width:850px;
+    height: auto;
+    width: 96%;
+    border-radius: 8px;
 }
 
 .home-content {
+    margin-top: 90px;
     max-width: 600px;
+    margin-left: 40px;
 }
 
 .home-content h3 {
@@ -149,19 +165,20 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap:1.5rem; 
+    gap:2.5rem; 
 }
 
 .about-img img{
     padding-bottom: 20%;
-    max-width:630px;
+    max-width:600px;
     height: auto;
-    width: 100%;
+    width: 95%;
     border-radius: 8px;
 }
 
 .about-text h2{
     font-size: 60px;
+
 }
 .about-text h2 span{
     color: #0ef;
@@ -187,14 +204,14 @@ body {
 section{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3.2rem;
 }
 
 .container1{
     width: 500px;
     height: 500px;
     padding: 75px 90px;
-    margin-left: 100px;
+    margin-left: 10vw;
 }
 
 .heading1{
@@ -326,7 +343,7 @@ section{
 
 
 .sub-title{
-    margin-top: 170px;
+    margin-top: 140px;
     font-size: 60px;
     text-align: center;
     justify-content: center;
@@ -497,22 +514,37 @@ section{
 .container2{
     width: 10vw;
     height: 500px;
-    padding: 35px 90px;
-    margin-left: 28%;
+    padding: 35px ;
+    margin-left:33%;
     
 }
 
-#resume{
+/* #resume{
     background-image:url(resume.png) ;
     background-position: center;
-    height: 75vh;
-    width: 28vw;
-    justify-content: center;
+    height: 70vh;
+    width: 30vw;
     margin-top: 50px;
     /* display: block;
     filter: blur(2.5px);
-  -webkit-filter: blur(2.5px); */
+  -webkit-filter: blur(2.5px); 
 
+} */
+
+#resume{
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-img img{
+    margin-top: 35px;
+    max-width:600px;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .btn1 {
@@ -530,9 +562,8 @@ section{
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
     0 0 25px cyan;
-    margin-top: 35vh;
-    margin-left: 150px;
-    justify-content: center;
+    margin-left: 3vw;
+    margin-top:-9px
 }
 
 .btn1:hover {
@@ -543,7 +574,7 @@ section{
 
 
 .contact{
-    margin-top: 55vh;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -693,6 +724,3 @@ section{
     display: none;
     color: green;
   }
-
-
-  
