@@ -204,7 +204,7 @@ body {
 section{
     display: flex;
     flex-wrap: wrap;
-    gap: 3.1rem;
+    gap: 3.0rem;
 }
 
 .container1{
