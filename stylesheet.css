@@ -204,11 +204,11 @@ body {
 section{
     display: flex;
     flex-wrap: wrap;
-    gap: 2.0rem;
+    gap: 3.2rem;
 }
 
 .container1{
-    width: 500px;
+    width: 450px;
     height: 500px;
     padding: 75px 90px;
     margin-left: 10vw;
